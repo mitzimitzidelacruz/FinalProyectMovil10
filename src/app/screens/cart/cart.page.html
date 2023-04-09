@@ -1,5 +1,6 @@
 <ion-content>
-  <h3 class="title" *ngIf="(cartItems$|async).length">{{(cartItems$|async).length}} towards at cart</h3>
+  <br>
+  <h3 class="title" *ngIf="(cartItems$|async).length">{{(cartItems$|async).length}} PRODUCTO AÑADIDO</h3>
 
   <!-- CART ITEMS -->
   <ion-list lines="none">
@@ -18,11 +19,17 @@
   <!-- EMPTY CART -->
   <div class="empty-cart" *ngIf="!(cartItems$|async).length">
     <ion-icon name="d-cart"></ion-icon>
-    <p>Tu carro está vacío</p>
+    <p>El carrito está vacío</p>
   </div>
 
   <!-- CHECKOUT BUTTON -->
+ 
   <app-button *ngIf="(cartItems$|async).length">
-    Total del pedido: <span><sup>$</sup>{{totalAmount$|async|number:'1.2'}}</span>
+    Total del pedido: <span><sup>$</sup>{{totalAmount$|async|number:'1.2' }}</span> 
   </app-button>
+  
+  <app-button [routerLink]="['/venta']">
+    Realiza la compra
+  </app-button>
+
 </ion-content>

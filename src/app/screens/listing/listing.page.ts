@@ -24,26 +24,26 @@ export class ListingPage implements OnInit {
     this.categories = [
       {
         id: 1,
-        label: 'All',
+        label: 'TODO',
         image: 'assets/images/icons/all.png',
         active: true,
       },
       {
         id: 2,
-        label: 'Burgers',
-        image: 'assets/images/icons/burger.png',
+        label: 'TAMALES',
+        image: 'assets/images/icons/tamales.png',
         active: false,
       },
       {
         id: 3,
-        label: 'Dishes',
-        image: 'assets/images/icons/dish.png',
+        label: 'SOPAS',
+        image: 'assets/images/icons/sopas.png',
         active: false,
       },
       {
         id: 4,
-        label: 'Sushi',
-        image: 'assets/images/icons/sushi.png',
+        label: 'ENSALADAS',
+        image: 'assets/images/icons/ensaladas.png',
         active: false,
       },
     ];

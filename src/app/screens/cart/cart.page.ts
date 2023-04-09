@@ -35,7 +35,7 @@ export class CartPage implements OnInit {
   async removeFromCart(item: CartItem) {
     const alert = await this.alertCtrl.create({
       header: 'Remove',
-      message: 'Are you sure you want to remove?',
+      message: '¿Estás seguro de eliminarlo?',
       buttons: [
         {
           text: 'Yes',

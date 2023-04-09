@@ -10,9 +10,29 @@ export class CartService {
   private items$ = new BehaviorSubject<CartItem[]>([
     {
       id: 1,
-      name: 'Sea Food',
-      price: 12,
-      image: 'assets/images/foods/seafood-dishes.png',
+      name: 'Enchiladas',
+      price: 35,
+      image: 'assets/images/foods/enchiladas.png',
+      quantity: 1,
+    },{
+      id: 4,
+      name: 'Quesadillas',
+      price: 20,
+      image: 'assets/images/foods/quesadillas.png',
+      quantity: 1,
+    },
+    {
+      id: 5,
+      name: 'Pozole',
+      price: 80,
+      image: 'assets/images/foods/pozole.png',
+      quantity: 1,
+    },
+    {
+      id: 7,
+      name: 'Huevos',
+      price: 40,
+      image: 'assets/images/foods/huevo.png',
       quantity: 1,
     },
   ]);

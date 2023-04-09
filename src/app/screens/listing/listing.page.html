@@ -3,7 +3,7 @@
   <div class="header">
     <h1>Menu</h1>
     <div class="avatar">
-      <ion-img src="assets\images\face.png"></ion-img>
+      <ion-img src="assets\images\yo.jpeg"></ion-img>
     </div>
   </div>
 
@@ -16,7 +16,7 @@
   </div>
 
   <!-- PRODUCTS -->
-  <h1 class="list-header">Popular</h1>
+  <h1 class="list-header">Popular ahora</h1>
   <div class="food-list">
     <app-food-card *ngFor="let food of foods" [item]="food" (clicked)="goToDetailPage(food.id)"></app-food-card>
   </div>
