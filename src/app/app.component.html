@@ -10,16 +10,22 @@
     </ion-label>
    </div>
    <div class="action-button">
-    <ion-button> <i-icon slot="start" name="add"></i-icon> Verificado
+    <ion-button [routerLink]="['/verificado']"> <i-icon slot="start" name="add"></i-icon> Verificado
     </ion-button>
+ 
    </div>
 
    <ion-list class="menu-items" lines="none">
     <ion-item>
-      <ion-icon name="accessibility-outline"></ion-icon>Pagina principal
+     <i-icon slot="start" name="add"></i-icon>
+     <ion-icon [routerLink]="['/home']" name="accessibility-outline"></ion-icon>Pagina principal
+  
+     
     </ion-item>
     <ion-item>
-      <ion-icon name="arrow-undo-outline"></ion-icon>Cerrar sesión
+      <i-icon slot="start" name="add"></i-icon>
+      <ion-icon [routerLink]="['/login']" name="arrow-undo-outline"></ion-icon>Cerrar sesión
+    
     </ion-item>
    </ion-list>
 

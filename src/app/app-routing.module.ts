@@ -41,7 +41,11 @@ const routes: Routes = [
   {
     path: 'venta',
     loadChildren: () => import('./venta/venta.module').then( m => m.VentaPageModule)
+  },  {
+    path: 'verificado',
+    loadChildren: () => import('./verificado/verificado.module').then( m => m.VerificadoPageModule)
   },
+
 
 
 ];
