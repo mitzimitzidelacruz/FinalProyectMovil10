@@ -45,6 +45,10 @@ const routes: Routes = [
     path: 'verificado',
     loadChildren: () => import('./verificado/verificado.module').then( m => m.VerificadoPageModule)
   },
+  {
+    path: 'geolocation',
+    loadChildren: () => import('./geolocation/geolocation.module').then( m => m.GeolocationPageModule)
+  },
 
 
 
