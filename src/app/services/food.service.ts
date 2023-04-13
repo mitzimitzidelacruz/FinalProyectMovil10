@@ -57,7 +57,7 @@ export class FoodService {
       },
       {
         id: 7,
-        title: 'Huevos',
+        title: 'Omelette',
         price: 40,
         image: 'assets/images/foods/huevo.png',
         description:

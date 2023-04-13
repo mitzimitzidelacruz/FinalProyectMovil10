@@ -36,7 +36,7 @@ export class ListingPage implements OnInit {
       },
       {
         id: 3,
-        label: 'SOPAS',
+        label: 'CALDOS',
         image: 'assets/images/icons/sopas.png',
         active: false,
       },

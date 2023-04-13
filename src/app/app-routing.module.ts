@@ -49,6 +49,10 @@ const routes: Routes = [
     path: 'geolocation',
     loadChildren: () => import('./geolocation/geolocation.module').then( m => m.GeolocationPageModule)
   },
+  {
+    path: 'policy-privacity',
+    loadChildren: () => import('./policy-privacity/policy-privacity.module').then( m => m.PolicyPrivacityPageModule)
+  },
 
 
 

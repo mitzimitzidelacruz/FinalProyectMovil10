@@ -1,8 +1,9 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="login"> </ion-back-button>
     </ion-buttons>
+    
     <ion-title>Registro</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,7 +16,7 @@
     <ion-card-content>
       <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
         <ion-item>
-          <ion-label position="floating">Ingresa tu Nombre</ion-label>
+          <ion-label position="floating">Ingresa tu Correo Electronico</ion-label>
           <ion-input formControlName="nombre"></ion-input>
         </ion-item>
         <ion-item>
@@ -27,8 +28,15 @@
           <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
         </ion-item>
         <br>
+        <div class="action-button">
+          <ion-button [routerLink]="['/policy-privacity']"> <i-icon slot="start" name="add"></i-icon> Politica de privacidad
+          </ion-button>
+         </div>
+      
+        <br>
         <ion-button (click)="guardar()">Registrarse
         </ion-button>
+
       </form>
     </ion-card-content>
   </ion-card>

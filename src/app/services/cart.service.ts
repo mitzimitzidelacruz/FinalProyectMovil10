@@ -30,7 +30,7 @@ export class CartService {
     },
     {
       id: 7,
-      name: 'Huevos',
+      name: 'Omelette',
       price: 40,
       image: 'assets/images/foods/huevo.png',
       quantity: 1,
